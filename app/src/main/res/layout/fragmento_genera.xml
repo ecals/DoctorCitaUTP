@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="2"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            >
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                >
+
+                <TextView
+                    android:id="@+id/txtEspecialidad"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/spinner5"
+                    android:paddingTop="10dp"
+                    android:text="Especialidad"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+
+                <Spinner
+                    android:id="@+id/cboEspecialidad"
+                    android:textColor="@color/colorAccent"
+                    android:singleLine="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/dropdownListPreferredItemHeight"
+                    android:background="@drawable/abc_spinner_mtrl_am_alpha"
+                    android:backgroundTint="@color/colorAccent"
+                    android:ellipsize="marquee"
+                    />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                >
+
+                <TextView
+                    android:id="@+id/txtMedico"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/spinner5"
+                    android:paddingTop="10dp"
+                    android:text="Médico"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+
+                <Spinner
+                    android:id="@+id/cboMedico"
+                    android:textColor="@color/colorAccent"
+                    android:singleLine="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/dropdownListPreferredItemHeight"
+                    android:background="@drawable/abc_spinner_mtrl_am_alpha"
+                    android:backgroundTint="@color/colorAccent"
+                    android:ellipsize="marquee"
+                    />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                >
+
+                <TextView
+                    android:id="@+id/txtFecha"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/spinner5"
+                    android:paddingTop="10dp"
+                    android:text="Fecha"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+
+                <EditText
+                    android:id="@+id/ediFecha"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="numberDecimal"
+                    android:hint="Fecha"
+                    />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnBuscar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Buscar" />
+
+
+            </LinearLayout>
+
+
+
+
+
+        </LinearLayout>
+
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            >
+
+            <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                xmlns:tools="http://schemas.android.com/tools">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_weight="1"
+
+                >
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/horariodRecyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    tools:listitem="@layout/lista_horario"
+                    />
+
+
+            </LinearLayout>
+
+
+            </ScrollView>
+        </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+
+
+
+    </RelativeLayout>

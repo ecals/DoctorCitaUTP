@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/MenuCancela"
+        android:title="@string/cancelar"
+        android:icon="@drawable/ic_close"
+        app:showAsAction="ifRoom"
+        />
+
+    <item
+        android:id="@+id/MenuGuarda"
+        android:title="@string/save"
+        android:icon="@drawable/ic_save"
+        app:showAsAction="ifRoom"
+        />
+
+    <item
+        android:id="@+id/MenuEdita"
+        android:title="@string/editar"
+        android:icon="@drawable/ic_edit"
+        app:showAsAction="ifRoom"
+        />
+
+</menu>

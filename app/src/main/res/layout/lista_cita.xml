@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/citasls"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingTop="5dp">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            >
+
+
+            <TextView
+                android:id="@+id/c_especialidad"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@android:color/black"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/c_medico"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/c_especialidad"
+                android:layout_marginLeft="10dp"
+                android:textSize="14sp"
+                />
+
+            <TextView
+                android:id="@+id/c_paciente"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/c_medico"
+                android:layout_marginLeft="10dp"
+                android:textSize="12sp"
+                android:textColor="@color/doc_pac_color"
+                />
+
+            <TextView
+                android:id="@+id/c_fecha"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/c_paciente"
+                android:layout_marginLeft="10dp"
+                android:textSize="12sp"
+                android:textColor="@color/color_fecha"
+                />
+            <TextView
+                android:id="@+id/c_hora"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/c_fecha"
+                android:layout_marginLeft="10dp"
+                android:textSize="12sp"
+                android:textColor="@color/color_hora"
+                />
+            <TextView
+                android:id="@+id/c_estado"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/c_hora"
+                android:layout_marginLeft="10dp"
+                android:textSize="12sp"
+                android:textColor="@color/color_estado"
+                />
+
+
+            <!--
+            <TextView
+                android:id="@+id/c_fechas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/c_especialidad1"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/chat_time_color"
+                android:textSize="12sp" />
+            -->
+
+
+            <!--
+            <TextView
+                android:id="@+id/c_hora"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/c_fecha"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/round_corner_green"
+                android:gravity="center"
+
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                />
+            -->
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/doc_view_separator"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                />
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>
